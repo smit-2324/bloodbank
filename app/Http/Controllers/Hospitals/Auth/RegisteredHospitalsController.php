@@ -46,7 +46,7 @@ class RegisteredHospitalsController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         $request->validate([
             'hospitalName' => 'required|min:0|max:255|',
             //'hospitalID' => 'required|min:0|max:12|unique:hospitals',
@@ -57,7 +57,7 @@ class RegisteredHospitalsController extends Controller
             'zipCode' => 'required|min:0|max:5|',
             'stateID' => 'required',
             //'role' => 'required|min:1|max:1|',
-            'password' => ['required', 'confirmed', 
+            'password' => ['required', 'confirmed',
                             Rules\Password::min(8)->letters()->numbers()->mixedCase()->symbols()
                         ],
         ]);
@@ -82,7 +82,7 @@ class RegisteredHospitalsController extends Controller
         event(new Registered($hospitals));
 
         Auth::login($hospitals);
-
-        return redirect(RouteServiceProvider::HOSPITALS_HOME);
+            dd('444');
+        return view('Hospitals.auth.dashboard')
     }
 }

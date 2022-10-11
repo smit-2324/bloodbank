@@ -1,0 +1,268 @@
+/*
+    Template:       camille
+    Theme Name:     Camille Child
+    Theme URI:      http://themeforest.net/user/LA-Studio/portfolio?ref=LA-Studio
+    Author:         LA Studio
+    Author URI:     http://themeforest.net/user/LA-Studio?ref=LA-Studio
+    Description:    Camille - Multi-Concept WordPress Theme
+    Version:        1.0
+    Tags:           one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, translation-ready
+    License: 		GNU General Public License
+	License URI: 	licence/GPL.txt
+    Text Domain:    camille-child
+    Domain Path:    /languages/
+*/
+
+@font-face {
+    font-family: 'PlayfairDisplay-BoldItalic';
+    src: url('fonts/PlayfairDisplay-BoldItalic.eot');
+    src: url('fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+        url('fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
+        url('fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+        url('fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Italic';
+    src: url('fonts/PlayfairDisplay-Italic.eot');
+    src: url('fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('fonts/PlayfairDisplay-Italic.woff') format('woff'),
+        url('fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+        url('fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    src: url('fonts/PlayfairDisplay-Bold.eot');
+    src: url('fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('fonts/PlayfairDisplay-Bold.woff') format('woff'),
+        url('fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay Regular';
+    src: url('fonts/PlayfairDisplay-Regular.eot');
+    src: url('fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('fonts/PlayfairDisplay-Regular.woff') format('woff'),
+        url('fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay BlackItalic';
+    src: url('PlayfairDisplay-BlackItalic.eot');
+    src: url('PlayfairDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('PlayfairDisplay-BlackItalic.woff2') format('woff2'),
+        url('PlayfairDisplay-BlackItalic.woff') format('woff'),
+        url('PlayfairDisplay-BlackItalic.ttf') format('truetype'),
+        url('PlayfairDisplay-BlackItalic.svg#PlayfairDisplay-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+body.page-template-default{font-size: 16px;position: relative;min-height: 75vh;height: 100%;
+    background: linear-gradient(to top right,#48b84a 10%,#48b893 65%,#7bb848 125%);background-repeat:no-repeat;}
+.site-inner{margin-top: 77px;}
+.main-header{ position: fixed;width: 100%;z-index: 99999;}
+
+#close-alert {float: right !important;border: 0 !important;background-color: #f2dede !important;font-size:14px !important;}
+.business-form .alert {padding: 15px;margin-bottom: 20px;background-color: #f2dede;border-color: #ebccd1;color: #a94442;}
+.business-form .alert > ul {margin-bottom: 0;}
+.business-form .alert li{margin-top: 0;font-size:12px;color: #843534;font-weight: bold;}
+
+.site-header-mobile .header-custom-btn a.component-target {background: #d8242b;color: #fff;padding: 10px 20px;border-radius: 3em;margin: 0;}
+.site-header-mobile .header-custom-btn a.component-target span{color: #fff;font-size: 10px;}
+.backtotop-container .btn-backtotop {bottom: 20px;}
+.site-header .header_component.header-custom-btn > .component-target .component-target-text {color: #fff;}
+.is-sticky .sticky--pinned{ -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);-moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);}  
+
+/* Contact Form */
+::placeholder,.wpcf7-form-control-wrap .wpcf7-select,.rs-layer input[type="date"]  { font-size:12px;}
+select option{color:#000 !important}
+.wpcf7-form-control-wrap .wpcf7-select, .wpcf7-form-control-wrap .wpcf7-text, .wpcf7-form-control-wrap .wpcf7-textarea, .rs-layer input[type="date"] {
+background: #fff;
+padding: 12px 15px;margin-bottom:20px;color: #4e5154;border: 1px solid rgba(0,0,0,.2);border-radius: 5px;}
+.business-form{width:650px;background: #fff;padding: 20px !important;}
+.business-form label{color: #464646;font-size: 14px;}
+.wpcf7-form-control-wrap .wpcf7-select{-webkit-appearance: none;border:1px solid #e8e8e8;font-size: 12px;
+  -moz-appearance: window;background-image: url("../../uploads/2021/01/br_down-1.png");background-repeat: no-repeat;background-position: top 15px right 10px;padding: 7px 7px !important;background-size: 15px;
+padding: 12px 15px;margin-bottom: 20px;font-size: 12px;color: #4e5154;border: 1px solid rgba(0,0,0,.2);border-radius: 5px;height: 50px;} 
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output,.wpcf7 form .wpcf7-response-output{color:#000;}
+.wpcf7-not-valid {margin: 0 !important;}
+div#ui-datepicker-div { z-index:1000!important; }
+.rs-layer input[type="date"] ,input[type="date"],rs-layer input[type="date"], #start-date {width:100% !important; min-width:95%;height: 50px;margin-bottom: 20px;font-size: 12px;color: #4e5154;border: 1px solid rgba(0,0,0,.2);border-radius: 5px;}
+input[type="submit"]{font-size: 15px;}
+.wpcf7-not-valid {border: 1px solid rgb(220, 50, 50) !important;}
+.wpcf7-not-valid-tip {display:none;}
+.danger {color: #ea5455!important;}
+.submit-btn {text-align:center !important;padding: 10px 50px !important;} 
+.business-form .col-sm-6{text-align:left !important;} 
+.btn:hover {background-color: #08b475;color: #fff;}
+.btn{border:0;background: no-repeat padding-box #08b475;box-shadow: 0 10px 20px rgb(11 50 69 / 22%);border-radius: 50px;font-size: 18px;}
+.custom-form-container {background: #fff;padding: 50px !important;border-radius: 1.5rem;}  
+.main-header .row {margin:0}
+.main-header  {box-shadow: 0 3px 5px rgb(57 63 72 / 5%);background: #fff;padding: 20px 0;}
+.form-title{color: #001c8a;text-align: center;margin-bottom: 40px;}
+.contact-form label{font-size: 14px;}
+.mobile-number {text-align:right;height: 44px;line-height: 44px;}
+.pre-approved-form .main-title{margin-bottom: 45px;}
+.requested-amount {font-size: 60px;margin: 25px 0;position: relative;}
+.amount-notes {margin-top: 50px;}
+.pre-approved-form .congrats-title,.pre-approved-form .main-title{font-family: 'PlayfairDisplay-BoldItalic';font-size: 50px;margin-top: 0;letter-spacing: -3px; font-weight: 900;font-style: italic;}
+.congrats-title{margin-bottom:0;}
+.document form{margin-top: 40px;}
+.section{padding: 50px 0;display: inline-block;width: 100%;}
+.mobile-number-for-mobile{display:none;}
+.desktop-number{text-align: right;}
+span.add-star {font-size: 34px;position: absolute;top: 5px;}
+
+/* Inner page Header CSS */
+.enable-header-transparency .site-header:not(.is-sticky) .header_component > .inner-page-menu {color: #343538;}
+
+/* Inner page Content CSS */
+.inner-site-page .page-content{padding:150px 0 100px;}
+.thank-you{text-align:center;}
+
+/* Inner page Footer CSS */
+.home .home-footer {position: absolute;bottom: 0;width: 100%;}
+.home .inner-page-footer {position: absolute;bottom: 0;width: 100%;height:0}
+.home #page.site {display: inline-block;width: 100%;position: relative;} 
+
+/*OOps Error Page CSS*/
+.oops-error-content {font-size: 20px;  }
+.oops-error-page {text-align: center;}
+.oops-error-page h1{font-size: 50px; font-family: 'PlayfairDisplay Regular';font-weight: 700;margin-top:0 }
+.advance-america-logo {position: relative;}
+.alert-danger{background-color: #ffc0cb8a;}
+.alert-danger ul{height: 50px;}
+.pre-approved-form {color:#232324bf;text-align: center;}
+.terms_and_condition {text-align: center;}
+.wpcf7-checkbox-terms_and_condition{margin-right:10px;}
+.advance_terms_table {text-align: center;width: 50%;margin: 40px auto;background-color: #09bc34;border-radius: 10px;border: none;}
+.advance_terms_table th,.advance_terms_table td{border:none;}
+.advance_terms_table th {padding:0}
+.advance_terms_table td {padding: 10px 40px;}
+.repair_credit_score {font-size: 20px;text-align: center;}
+.advance_terms_table td h2{border-bottom: 1px solid #fff;padding-bottom: 20px;display: inline-block;margin: 0;}
+.advance_terms_table h2{margin-top: 0;}
+.advance_terms_table h2, .advance_terms_table h4{color:#fff;}
+.advance_terms_table tbody{padding: 30px 0;display: inline-block;}
+.weekly-payment{background:#217c2f;padding:5px;border-radius:5px;font-size:10px;vertical-align: middle;margin-left: 10px;}
+.ltFormButton {border: 0;}
+
+@media screen and (min-width: 992px) and (max-width: 1199px)
+{
+.business-form {width: 450px;}
+.wpcf7-form-control-wrap .wpcf7-select, .wpcf7-form-control-wrap .wpcf7-text, .wpcf7-form-control-wrap .wpcf7-textarea{height:40px;}
+.business-form .col-sm-6{text-align:left !important;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+.business-form {width: 400px;}
+.wpcf7-form-control-wrap .wpcf7-select, .wpcf7-form-control-wrap .wpcf7-text, .wpcf7-form-control-wrap .wpcf7-textarea,.rs-layer input[type="date"] {padding: 10px !important;margin-bottom: 10px !important;height: 40px;color: #000;font-size: 12px;}
+::placeholder,select { font-size:12px;}
+.wpcf7-form-control-wrap .wpcf7-select {background-position: top 15px right 9px;background-size: 11px;}
+.rs-layer input[type="date"]{font-size:11px;}
+.business-form .col-sm-6 {padding:0 7px;}
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form .wpcf7-response-output {    margin: 22px 0px 11px !important;white-space: pre-wrap;line-height: 20px !important;}
+.business-form label {font-size: 13px;}
+.business-form .col-sm-6{text-align:left !important;}
+.wpcf7-not-valid-tip {display: none;}
+}
+
+@media screen and (min-width: 421px) and (max-width: 767px)
+{
+.business-form {width: 300px;padding:10px;overflow-y: scroll;max-height: 400px;}    
+.wpcf7-form-control-wrap .wpcf7-select, .wpcf7-form-control-wrap .wpcf7-text, .wpcf7-form-control-wrap .wpcf7-textarea,.rs-layer input[type="date"] {padding: 10px !important;margin-bottom:10px !important;height: 40px;color: #000;font-size: 12px;}
+::placeholder,select { font-size:12px;}
+.wpcf7-form-control-wrap .wpcf7-select {background-position: top 15px right 9px;background-size: 11px;}
+.wpcf7-form-control-wrap .wpcf7-not-valid-tip {padding-bottom: 9px !important; display: none;}
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form .wpcf7-response-output {margin: 22px 0px 11px !important;white-space: pre-wrap;line-height: 20px !important;}
+.rs-layer input[type="date"] ,input[type="date"],rs-layer input[type="date"], #start-date,input {width:100% !important;}
+input[type="submit"]{text-align:center !important;}
+.business-form .col-xs-12{text-align:left !important;}
+.inner-site-page .page-content {padding: 50px 0 30px;}
+.home .inner-page-footer {position: inherit;}
+.mobile-number{text-align:left;}
+.fir_logo{padding:0;}
+.main-header {padding: 10px 0;}
+.custom-form-container {padding: 20px 15px !important;max-width: 90%;}
+.contact-form .row, .document-form .row{margin:0;}
+#terms_and_condition{width: auto !important;}
+.rs-layer input[type="date"], input[type="date"], rs-layer input[type="date"], #start-date {height: 40px;}
+.amount-notes {margin-top: 40px;}
+.advance_terms_table {width: 70%;}
+.advance_terms_table td {padding: 10px 20px;}
+.oops-error-page h1 {font-size: 35px;}
+.mobile-number-for-mobile{display:block;}
+.desktop-number{display:none;}
+.main-header { text-align: center;}
+.pre-approved-form .congrats-title{font-size: 30px;}
+.requested-amount {font-size: 35px;}
+.pre-approved-form .main-title {font-size: 25px;}
+span.add-star {font-size: 25px; top: 0px;}
+.wpcf7-form-control-wrap {margin-bottom: 15px;}
+.pre-approved-form .congrats-title, .pre-approved-form .main-title {letter-spacing: -2px;}
+.advance-america-logo {width: 50%;}
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px)
+{
+.site-header-mobile .header-custom-btn a.component-target {line-height: 24px;height: 35px;padding: 5px;}
+.business-form {width: 250px;padding: 10px !important;overflow-y: scroll;max-height: 450px;}
+.business-form .col-xs-12{text-align:left !important;}
+.wpcf7-form-control-wrap .wpcf7-select, .wpcf7-form-control-wrap .wpcf7-text, .wpcf7-form-control-wrap .wpcf7-textarea,.rs-layer input[type="date"] {padding: 10px;margin-bottom:10px;height: 40px;color: #000;font-size: 14px !important;margin: 0px 0px 10px !important;}
+.wpcf7-form-control-wrap .wpcf7-select{padding:8px !important}
+::placeholder,select { font-size:14px;}
+.wpcf7-form-control-wrap .wpcf7-select {background-position: top 15px right 9px;background-size: 11px;}
+.wpcf7-form-control-wrap .wpcf7-not-valid-tip {display: none;padding-bottom: 9px !important;}
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form .wpcf7-response-output {    margin: 22px 0px 11px !important;white-space: pre-wrap;line-height: 20px !important;}
+.rs-layer input[type="date"] ,input[type="date"],rs-layer input[type="date"], #start-date,input {width:100% !important;}
+input[type="submit"]{text-align:center !important;}
+.inner-site-page .page-content {padding: 50px 0 30px;} 
+.home .inner-page-footer {position: inherit;}
+.mobile-number{text-align:left;}
+.fir_logo{padding:0;}
+.main-header {padding: 10px 0;} 
+.custom-form-container {padding: 20px 15px !important;max-width: 90%;}
+.contact-form .row, .document-form .row{margin:0;}
+#terms_and_condition{width: auto !important;}
+.rs-layer input[type="date"], input[type="date"], rs-layer input[type="date"], #start-date {height: 40px;}
+.pre-approved-form .main-title { font-size: 25px;}
+.advance_terms_table {width: 100%;}
+.advance_terms_table td {padding: 10px 10px;}
+.amount-notes {margin-top: 40px;}
+.oops-error-page h1 {font-size: 30px;}
+.footer-top {padding-top: 40px;}
+.advance_terms_table h2 {font-size: 18px;}
+.advance_terms_table h4 {font-size: 14px;}
+.mobile-number-for-mobile{display:block;}
+.desktop-number{display:none;}
+.main-header { text-align: center;}
+.pre-approved-form .congrats-title{font-size: 30px;}
+.requested-amount {font-size: 35px;}
+span.add-star {font-size: 25px; top: 0px;}
+.wpcf7-form-control-wrap {margin-bottom: 15px;}
+.pre-approved-form .congrats-title, .pre-approved-form .main-title {letter-spacing: -2px;}
+}
+
+

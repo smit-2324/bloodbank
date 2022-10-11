@@ -1,0 +1,256 @@
+/* CRM Custom CSS */
+
+@font-face {
+    font-family: 'Fax Sans';
+    src: url('../font/FaxSans-Beta.eot');
+    src: url('../font/FaxSans-Beta.eot?#iefix') format('embedded-opentype'),
+        url('../font/FaxSans-Beta.woff2') format('woff2'),
+        url('../font/FaxSans-Beta.woff') format('woff'),
+        url('../font/FaxSans-Beta.ttf') format('truetype'),
+        url('../font/FaxSans-Beta.svg#FaxSans-Beta') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.global-heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+
+*
+{
+margin: 0;
+padding: 0;
+}
+
+.credit-wrap {
+    border: 2px solid #000;
+    border-radius: 15px;
+    width: 400px;
+	height: 850px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.month.active{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1px;
+}
+.end-bal,.cal-footer, table th,table td{text-align:center}
+.cal-header .col-md-9 h5,.cal-footer .col-md-9 h5{display:inline-block;}
+.cal-header .col-md-9,.cal-footer .col-md-9{
+    text-align: right;
+}
+.cal-body .num-box{
+   width: calc(100% - 14px);
+    float: left;
+    margin: 3px 8px;    border: 1px solid #000;
+    border-radius: 10px;
+    min-height: 35px;
+}
+.calendar-wrap ::placeholder {font-style:italic}
+hr { border-top: 2px solid #000;}
+table { width: 100%;}
+.credit-wrap .cal-body{
+    min-height: 500px;
+    overflow-y: scroll;
+    height: 450px;
+}
+
+.content {
+    border: 2px solid #000;
+    border-radius: 15px;
+    /* width: 765px;  */
+    margin: 0 auto;
+    padding: 20px;
+}
+#test1 
+{ 
+    border: thin solid black;
+    width: 100%;
+    height: 200px;
+    line-height: 150px;
+    background-color: #000;
+    color: #FFF;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+input#deposist {
+    margin: 10px 4px 8px;
+    height: 66px;
+    border-radius: 10px;
+    width: 100%;
+}
+input.deposist-text {
+    width: 72%;
+    max-height: 50px;
+}
+#searchname::placeholder {
+    color: #AEAEAE;
+    font-size: 12px; 
+    white-space:pre-line;
+     text-align: center; 
+} 
+::placeholder {
+    color: #AEAEAE;
+    font-size: 1rem; 
+    white-space:pre-line;
+     text-align: center; 
+} 
+
+/*Calendar CSS */
+#month{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+.bal-box
+{
+background: #6abb45;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 10px;	
+}
+.cal-header .col-md-9 h5,.cal-footer .col-md-9 h5{display:inline-block;}
+.cal-header .col-md-9,.cal-footer .col-md-9{
+    text-align: right;
+}
+.cal-body .num-box{
+   /* width: calc(14% - 14px); */
+    float: left;
+    margin: 10px 8px;    border: 1px solid #000;
+    border-radius: 10px;
+    min-height: 35px;
+}
+.calendar-wrap ::placeholder {
+font-style:italic
+}
+ul.lender {
+    list-style-type: none !important;
+    padding: 0 !important;
+    margin-top: 10px;
+}
+
+.lender-send-mail button {
+    color: white;
+    background: #0075ff;
+    float: right;
+    margin-right: 10px;
+    border-radius: 0.25rem;
+}
+
+.picker,
+.picker__holder {
+    width: 128%;
+}
+
+.picker--time .picker__holder {
+    width: 30%;
+}
+
+.picker--time {
+    min-width: 0px;
+    max-width: 0px;
+}
+
+span.label.label-success.notes-list-status {
+    font-size: 11px !important;
+}
+
+.lender-send-mail button {
+    float: right;
+    margin-right: 10px;
+    background: #8ADA19;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 12px 12px 12px 12px;
+    padding: 10px 45px 10px 45px;
+}
+
+.btn.btn-brand:hover,
+.lender-send-mail button:hover {
+    color: #fff;
+    background: #001D8A
+}
+
+.picker,
+.picker__holder {
+    width: 128%;
+}
+
+.picker--time .picker__holder {
+    width: 30%;
+}
+
+.picker--time {
+    min-width: 0px;
+    max-width: 0px;
+}
+
+span.label.label-success {
+    font-size: 13px !important;
+}
+
+
+
+.notes-name-date {
+    font-size: 15px !important;padding:0 !important;
+}
+
+
+#triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 20px solid #0f0e0e;
+    display: block;
+    margin: 0 auto;
+}
+
+.contactmiddle #payment_frequency,.contactmiddle input,.contactmiddle select, .contactright select{width:100%;}
+.contactmiddle input[type=checkbox]{width:auto;}
+.table>tbody>tr>td {border-bottom: 1px solid #e2e8f0; width: 765px;} 
+
+.table-actions {opacity: 1 !important;}
+.table {background: #fff;}
+.tablet__head-label h1, .tablet__head-label h3{margin-top:0 !important;}
+.pdf-create{text-align: right;display: block;margin-bottom: 20px;}
+.client-company-text {font-size: 16px;color: #242939;border-bottom: 1px solid rgba(83, 107, 226, 0.3);margin-bottom: 15px;}
+.notes-name-date p, .notes-name-date h6{display:inline-block;margin: 0;}
+.notes-section h4{font-size: 15px;font-weight: 500;float: left;    padding: 13px 0;}
+.notes-section .note-add{display: inline-block;float: right; }  
+.deal-section .deal-top-info{padding:15px 0 0;}
+.bottom-deal-box .tablet__head-label .deal-title{padding: 15px 0 15px;}
+.dealmiddle{text-align: center;}   
+#phonenumber{height: 47px;}  
+/*======================== Media Query =============================*/
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px)
+{
+.notes-section .tablet__body .col-sm-8, .notes-section .tablet__body .col-sm-4{width:100%;padding:0; margin-bottom:5px}  
+.dealmiddle h4{font-size:15px;}   
+.client-company-text {font-size: 14px;}
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+{
+.client-view-wrap .left-view,.client-view-wrap .right-view{width:100%;}
+}
