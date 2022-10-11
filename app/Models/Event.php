@@ -18,4 +18,9 @@ class Event extends Model
         'image',
         'description',
     ];
+
+    public function hospital()
+    {
+        return $this->belongsTo(Hospitals::class, 'hospital_id', 'id',);
+    }
 }

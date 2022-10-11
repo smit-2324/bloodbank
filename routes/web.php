@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Hospitals\Auth\HospitalController;
+use App\Http\Controllers\Hospitals\Auth\EventController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,7 +31,7 @@ Route::get('/admin_dashboard', function () {
     return view('auth.admin_dashboard');
 })->middleware(['auth'])->name('admin_dashboard');
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
 
 Route::get('auth/t&c', function () {
     return view('auth/t&c');
@@ -57,3 +59,10 @@ Route::post('Hospitals/auth/dashboard', function () {
 });
 
 Route::get('/donar', [HospitalController::class, 'donarList'])->name('Hospitals.manage.donar');
+Route::controller(EventController::class)->group(function () {
+    Route::get('/Hospitals/event', 'index')->name('Hospitals.event.index');
+    Route::get('/Hospitals/create', 'create')->name('Hospitals.event.create');
+    Route::get('/Hospitals/event/{id}', 'edit')->name('Hospitals.event.edit');
+    Route::post('/Hospitals/event', 'submitEvent')->name('Hospitals.event.submitevent');
+    Route::get('/Hospitals/event/delete/{id}', 'deleteEvent')->name('Hospitals.event.delete');
+});
