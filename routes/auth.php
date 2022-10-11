@@ -17,6 +17,8 @@ use App\Http\Controllers\Admin\Auth\AdminNewPasswordController;
 
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Hospitals\Auth\PasswordResetLinkController as HospitalRPass;
+
+use App\Http\Controllers\Hospitals\Auth\HospitalController;
 use App\Http\Controllers\Admin\Auth\PasswordResetLinkController as AdminRPass;
 
 use App\Http\Controllers\Auth\RegisteredUserController;
@@ -154,6 +156,8 @@ Route::middleware('auth')->group(function () {
 Route::prefix('/Hospitals')->name('Hospitals.')->group(function (){
     Route::get('/', [HosptialsAuth::class, 'create']);
     Route::get('/login', [HosptialsAuth::class, 'create'])->name('login');
+    Route::post('/login', [HosptialsAuth::class, 'store']);
+    Route::get('/donar', [HospitalController::class, 'donarList'])->name('Hospitals.manage.donar');
     Route::post('/login', [HosptialsAuth::class, 'store']);
 
     Route::get('/register', [RegisteredHospitalsController::class, 'create'])

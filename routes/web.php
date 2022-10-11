@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Hospitals\Auth\HospitalController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -55,3 +55,5 @@ Route::get('Hospitals/auth/dashboard', function () {
 Route::post('Hospitals/auth/dashboard', function () {
     return view('Hospitals.auth.dashboard');
 });
+
+Route::get('/donar', [HospitalController::class, 'donarList'])->name('Hospitals.manage.donar');
