@@ -27,7 +27,7 @@
              </a>
              <ul>
                  <li> <a href="{{ route('Hospitals.manage.donar') }}"><i
-                             class="bx bx-right-arrow-alt"></i>All Merchants</a>
+                             class="bx bx-right-arrow-alt"></i>All Donar</a>
                  </li>
              </ul>
          </li>
