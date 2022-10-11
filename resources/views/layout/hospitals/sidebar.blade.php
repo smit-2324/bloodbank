@@ -13,7 +13,7 @@
      <!--navigation-->
      <ul class="metismenu" id="menu">
          <li>
-             <a href="">
+             <a href="{{route('Hospitals.manage.dashboard')}}">
                  <div class="parent-icon"><i class='bx bx-home-circle'></i>
                  </div>
                  <div class="menu-title">Dashboard</div>

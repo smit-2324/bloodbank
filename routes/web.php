@@ -57,3 +57,4 @@ Route::post('Hospitals/auth/dashboard', function () {
 });
 
 Route::get('/donar', [HospitalController::class, 'donarList'])->name('Hospitals.manage.donar');
+Route::get('/dashboard', [HospitalController::class, 'dashboard'])->name('Hospitals.manage.dashboard');

@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\App;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\BloodType;
 
 class User extends Authenticatable
 {
@@ -88,5 +89,9 @@ class User extends Authenticatable
     public function appointmentsFail(){
 
         return $this->appointments->where('appointmentStatus',2);
+    }
+    public function bloodTypes(){
+
+        return $this->belongsTo(BloodType::class,'bloodType');
     }
 }

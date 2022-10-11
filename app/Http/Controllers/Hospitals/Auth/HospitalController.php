@@ -8,9 +8,14 @@ use App\Models\User;
 class HospitalController extends Controller
 {
     public function donarList(){
-        $user = User::all()->with("bloodtype");
-        dd($user);
+        $user = User::with("bloodTypes")->get();
+
       return view('Hospitals.manage.donar')
       ->withUser($user);
     }
+    public function dashboard(){
+
+      return view('Hospitals.manage.dashboard');
+    }
+
 }
