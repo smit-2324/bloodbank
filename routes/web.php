@@ -58,3 +58,5 @@ Route::post('Hospitals/auth/dashboard', function () {
 
 Route::get('/donar', [HospitalController::class, 'donarList'])->name('Hospitals.manage.donar');
 Route::get('/dashboard', [HospitalController::class, 'dashboard'])->name('Hospitals.manage.dashboard');
+Route::get('/bloodqty', [HospitalController::class, 'bloodQty'])->name('Hospitals.manage.bloodqty');
+Route::post('/store', [HospitalController::class, 'bloodQtyStore'])->name('Hospitals.manage.bloodqtystore');
