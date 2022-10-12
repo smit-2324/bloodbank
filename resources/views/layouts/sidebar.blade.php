@@ -1,10 +1,10 @@
 <div class="d-flex align-items-start flex-column">
 <nav class="ts-sidebar d-flex align-items-start flex-column">
     <ul class="ts-sidebar-menu background-color: dark ">
-    
+
         <li class="ts-label">Main</li>
         <li><a href="dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-			
+
         <li><a href="#"><i class="fa fa-files-o"></i> Blood Group</a>
             <ul>
                 <li><a href="add-bloodgroup.php">Add Blood Group</a></li>

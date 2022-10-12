@@ -66,3 +66,6 @@ Route::controller(EventController::class)->group(function () {
     Route::post('/Hospitals/event', 'submitEvent')->name('Hospitals.event.submitevent');
     Route::get('/Hospitals/event/delete/{id}', 'deleteEvent')->name('Hospitals.event.delete');
 });
+Route::get('/dashboard', [HospitalController::class, 'dashboard'])->name('Hospitals.manage.dashboard');
+Route::get('/bloodqty', [HospitalController::class, 'bloodQty'])->name('Hospitals.manage.bloodqty');
+Route::post('/store', [HospitalController::class, 'bloodQtyStore'])->name('Hospitals.manage.bloodqtystore');

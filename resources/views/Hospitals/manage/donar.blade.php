@@ -1,7 +1,7 @@
 @extends('layout.hospitals.master')
 
 @section('heading')
-{{ __('All Merchants') }}
+{{ __('All Donars') }}
 @stop
 
 @section('content')
@@ -48,8 +48,8 @@
                     </td>
 
                     <td>
-                        @if(!empty($data['bloodType']))
-                        {{ $data['bloodType'] }}
+                        @if(!empty($data['bloodTypes']['bloodType']))
+                        {{ $data['bloodTypes']['bloodType'] }}
                         @endif
                     </td>
                 </tr>

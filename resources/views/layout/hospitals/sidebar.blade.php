@@ -2,10 +2,14 @@
      <div class="sidebar-header">
          <img src="<?= env('SITE_URL'); ?>/admin-theme/assets/images/favicon_smallbyzloans.png" type="image/png" class="img-logo">
 
+<<<<<<< HEAD
          <h3 class="logo-text">
 
              <img src="<?= env('SITE_URL'); ?>/admin-theme/assets/images/smallbyzloans_logo.png">
          </h3>
+=======
+         <h6  style="color:black;font-size:0.9rem;">Online Blood Bank System</h6>
+>>>>>>> b1b3909fe3674c9ffd25518688347d6de67319c9
 
          <div class="toggle-icon ms-auto"> <i class='bx bx-arrow-to-left'></i>
 
@@ -14,7 +18,7 @@
      <!--navigation-->
      <ul class="metismenu" id="menu">
          <li>
-             <a href="">
+             <a href="{{route('Hospitals.manage.dashboard')}}">
                  <div class="parent-icon"><i class='bx bx-home-circle'></i>
                  </div>
                  <div class="menu-title">Dashboard</div>

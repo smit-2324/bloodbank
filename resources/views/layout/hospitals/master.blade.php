@@ -18,7 +18,7 @@
     <link href="<?=env('SITE_URL');?>/admin-theme/assets/css/custom.css" rel="stylesheet">
     <!-- <script src="{{ URL::to('admin-theme/assets/js/datephoneformat.js') }}"></script> -->
 
-    <title>Smallbyzloans</title>
+    <title>Online Blood Bank System</title>
 <style>
 .global-heading {
     font-family: 'Montserrat', sans-serif;
